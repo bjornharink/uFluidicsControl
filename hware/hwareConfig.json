@@ -1,0 +1,60 @@
+{
+  "_comment_": "Hardware configuration information. Please do not edit manually if  you do not know JSON notation.",
+  "test": {
+    "collecting": {
+      "hardware": "asi",
+      "config": [ "COM5" ]
+    },
+    "flowing": {
+      "hardware": "mfcs-ez",
+      "config": [ 798, 798 ],
+      "unit": "mba"
+    },
+    "imaging": {
+      "hardware": "mmc",
+      "config": [ "C:/Program Files/Micro-Manager-1.4/MMConfig_demo.cfg" ]
+    },
+    "valving": {
+      "hardware": "wago",
+      "config": [ "171.64.126.103", 40, 0 ]
+    }
+  },
+
+  "ucsf": {
+    "collecting": {
+      "hardware": "gallil",
+      "config": [ "COM4" ]
+    },
+    "flowing": {
+      "hardware": "mfcs-ez",
+      "config": [ 752, 753 ]
+    },
+    "imaging": {
+      "hardware": "mmc",
+      "config": [ 1 ]
+    },
+    "valving": {
+      "hardware": "wago",
+      "config": [ "192.168.1.2", 32, 512 ]
+    }
+  },
+
+  "stanford": {
+    "collecting": {
+      "hardware": "asi",
+      "config": [ "COM5" ]
+    },
+    "flowing": {
+      "hardware": "mfcs-ez",
+      "config": [ 881, 881 ]
+    },
+    "imaging": {
+      "hardware": "mmc",
+      "config": [ 1 ]
+    },
+    "valving": {
+      "hardware": "wago",
+      "config": [ "192.168.1.2", 32, 512 ]
+    }
+  }
+}

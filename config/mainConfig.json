@@ -1,0 +1,58 @@
+{
+  "_comment_": "Valve information and positions. Please do not edit manually if  you do not knwo JSON notation.", 
+  "profile": {
+    "hardware": "stanford"
+  }, 
+  "windows": {
+    "Microfluidic Control - Collect Module": {
+      "position": [
+        792, 
+        275
+      ], 
+      "size": [
+        248, 
+        507
+      ]
+    }, 
+    "Microfluidic Control - Flow Module": {
+      "position": [
+        0, 
+        0
+      ], 
+      "size": [
+        596, 
+        273
+      ]
+    }, 
+    "Microfluidic Control - Image Module": {
+      "position": [
+        827, 
+        302
+      ], 
+      "size": [
+        258, 
+        200
+      ]
+    }, 
+    "Microfluidic Control - Main - v1.0.0": {
+      "position": [
+        600, 
+        1
+      ], 
+      "size": [
+        472, 
+        224
+      ]
+    }, 
+    "Microfluidic Control - Valve Module": {
+      "position": [
+        3, 
+        275
+      ], 
+      "size": [
+        855, 
+        582
+      ]
+    }
+  }
+}

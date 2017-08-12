@@ -1,0 +1,32 @@
+valveOn 'PV1' 'PV2'
+delay 3
+valveOn 7 8 9 10 11 12
+delay 3
+valveOff 1 2 3 4 5 6
+delay 3
+valveOff 7 8 9 10 11 12
+delay 3
+valveOn 1 2 3 4 5 6
+delay 3
+valveOn 7 8 9 10 11 12
+delay 3
+valveOff 1 2 3 4 5 6
+delay 3
+valveOff 7 8 9 10 11 12
+delay 3
+valveOn 1 2 3 4 5 6
+delay 3
+valveOn 7 8 9 10 11 12
+delay 3
+valveOff 1 2 3 4 5 6
+delay 3
+valveOff 7 8 9 10 11 12
+delay 3
+valveOn 1 2 3 4 5 6
+delay 3
+valveOn 7 8 9 10 11 12
+delay 3
+valveOff 1 2 3 4 5 6
+delay 3
+valveOff 7 8 9 10 11 12
+delay 3

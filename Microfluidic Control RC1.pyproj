@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9590ca1b-b1c9-49d3-8d09-315d2fb25873</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>baseMain.py</StartupFile>
+    <SearchPath>C:\Program Files\Micro-Manager-1.4\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Microfluidic Control RC1</Name>
+    <RootNamespace>Microfluidic Control RC1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="baseGui.py" />
+    <Compile Include="baseMain.py" />
+    <Compile Include="chips\BeadSynthesizer\scripts\script_main.py" />
+    <Compile Include="collect\collectGui.py" />
+    <Compile Include="collect\collectMain.py" />
+    <Compile Include="collect\asiWrapper.py" />
+    <Compile Include="collect\gallilWrapper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="collect\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="config\configMain.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="config\__init__.py" />
+    <Compile Include="flow\flowGui.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flow\flowMain.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flow\mfcs-ezWrapper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flow\__init__.py" />
+    <Compile Include="hware\hwareMain.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hware\__init__.py" />
+    <Compile Include="image\imageGui.py" />
+    <Compile Include="image\imageMain.py" />
+    <Compile Include="image\mmcWrapper.py" />
+    <Compile Include="image\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="valve\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="valve\valveMain.py" />
+    <Compile Include="valve\valveGui.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="valve\wagoWrapper.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="chips\BeadReactorV0.5\" />
+    <Folder Include="chips\BeadReactorV0.5\scripts\" />
+    <Folder Include="chips\BeadSynthesizer\" />
+    <Folder Include="chips\BeadSynthesizer\scripts\" />
+    <Folder Include="chips\DEFAULT\scripts\" />
+    <Folder Include="hware\" />
+    <Folder Include="config\" />
+    <Folder Include="chips\" />
+    <Folder Include="chips\DEFAULT\" />
+    <Folder Include="flow\" />
+    <Folder Include="collect\" />
+    <Folder Include="image\" />
+    <Folder Include="valve\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chips\BeadReactorV0.5\BRv0.5.png" />
+    <Content Include="chips\BeadReactorV0.5\chipConfig.json" />
+    <Content Include="chips\BeadReactorV0.5\scripts\script_main.txt" />
+    <Content Include="chips\BeadSynthesizer\BeadSynthesizer3.0b.png" />
+    <Content Include="chips\BeadSynthesizer\chipConfig.json" />
+    <Content Include="chips\BeadSynthesizer\scripts\SmTest_5Codes.csv" />
+    <Content Include="chips\DEFAULT\chipConfig.json" />
+    <Content Include="flow\mfcs_64.dll" />
+    <Content Include="hware\hwareConfig.json" />
+    <Content Include="config\mainConfig.json" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

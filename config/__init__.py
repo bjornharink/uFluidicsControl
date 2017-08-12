@@ -1,0 +1,1 @@
+from configMain import *
